@@ -39,7 +39,6 @@
 body {
   font-family: 'Overpass', sans-serif;
   background-color: var(--LightPink);
-  
 }
 
 .main {
@@ -51,7 +50,6 @@ body {
 }
 
 .accordion__container {
-  
   max-width: 450px;
   width: 100%;
   border-radius: 10px;
@@ -89,7 +87,7 @@ body {
 }
 
 .accordion__title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: var(--Weight-600);
   color: var(--DarkPurple);
 }
@@ -121,6 +119,10 @@ body {
 }
 
 .icon__plus[aria-expanded="true"], .icon__minus[aria-expanded="false"] {
+  display: none;
+}
+
+.icon__plus.first {
   display: none;
 }
 
