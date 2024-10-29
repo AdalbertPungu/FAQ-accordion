@@ -47,6 +47,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  background-image: url('../images/background-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
 }
 
 .accordion__container {
@@ -55,6 +60,9 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--White);
+  position: relative;
+  z-index: 1;
 }
 
 .accordion__header {
@@ -74,7 +82,7 @@ body {
 }
 
 .accordion {
-  border-top: 1px solid var(--White);
+  border-top: 2px solid var(--LightPink);
   padding-top: 10px;
   margin-top: 10px;
 }
