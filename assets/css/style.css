@@ -47,7 +47,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
   background-image: url('../images/background-pattern-desktop.svg');
   background-repeat: no-repeat;
   background-position: center top;
@@ -132,6 +131,34 @@ body {
 
 .icon__plus.first {
   display: none;
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .main {
+    background-image: url('../images/background-pattern-mobile.svg');
+  }
+
+  .accordion__container {
+    max-width: 320px;
+  }
+
+  .icon__star {
+    width: 30px;
+  }
+
+  .icon__plus, .icon__minus {
+    width: 50px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .accordion__descrition {
+    padding-right: 30px;
+  }
+
 }
 
 .attribution { font-size: 11px; text-align: center; }
