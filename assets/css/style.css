@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'FontName';
+  src: url('../fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FontName';
+  src: url('../fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  /* Colors */
+
+  --White: hsl(0, 0%, 100%);
+  --LightPink: hsl(275, 100%, 97%);
+  --GrayishPurple: hsl(292, 16%, 49%);
+  --DarkPurple: hsl(292, 42%, 14%);
+
+  /* Typography Body paragraphs */
+
+  --font-size: 16px;
+
+  /* Font */
+
+  --font-family: "Overpass", serif;
+  --Weight-400: 400;
+  --Weight-600: 600; 
+  --Weight-700: 700;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--LightPink);
+  
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.accordion__container {
+  
+  max-width: 450px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon__star {
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: var(--Weight-700);
+  color: var(--DarkPurple);
+}
+
+.accordion {
+  border-top: 1px solid var(--White);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.accordion__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion__title {
+  font-size: 14px;
+  font-weight: var(--Weight-600);
+  color: var(--DarkPurple);
+}
+
+.accordion__title:hover {
+  font-weight: var(--Weight-600);
+  color: rgb(173, 40, 235);
+}
+
+.accordion__descrition {
+  display: none;
+  padding-right: 62px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: var(--Weight-400);
+  color: var(--GrayishPurple);
+}
+
+.icon__plus, .icon__minus {
+  transition: all 0.3s ease;
+}
+
+.icon__minus path {
+  fill: black;
+}
+
+.accordion__descrition.first {
+  display: block;
+}
+
+.icon__plus[aria-expanded="true"], .icon__minus[aria-expanded="false"] {
+  display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }  
